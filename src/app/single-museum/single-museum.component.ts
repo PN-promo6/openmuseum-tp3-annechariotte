@@ -7,13 +7,14 @@ import { MuseumListService } from '../services/museumList.service';
   styleUrls: ['./single-museum.component.css']
 })
 export class SingleMuseumComponent implements OnInit {
-  @Input() museumName : string;
-  @Input() museumAdress : string;
-  @Input() museumZipCode : string;
-  @Input() museumCity : string;
-  @Input() museumPhone : string;
-  @Input() museumWebSite : string;
-  @Input() museumOpening : string;
+  @Input() museumName: string;
+  @Input() museumAdress: string;
+  @Input() museumZipCode: string;
+  @Input() museumCity: string;
+  @Input() museumPhone: string;
+  @Input() museumWebSite: string;
+  @Input() museumOpening: string;
+  @Input() museumRef: string;
 
   constructor(private museumListService: MuseumListService) { }
 

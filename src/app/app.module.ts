@@ -11,14 +11,13 @@ import { AddComponent } from './add/add.component';
 import { MuseumDetailComponent } from './museum-detail/museum-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-
-const appRoutes:Routes = [
-  {path: 'add', component: AddComponent},
-  {path: 'singleMuseum', component: SingleMuseumComponent},
-  {path: 'museumDetail', component: MuseumDetailComponent},
-  {path: '', component: MuseumListComponent},
-  {path: 'not-found', component: NotFoundComponent },
-  {path: '**', redirectTo: 'not-found'}
+const appRoutes: Routes = [
+  { path: 'add', component: AddComponent },
+  { path: 'singleMuseum', component: SingleMuseumComponent },
+  { path: 'museum/:museumRef', component: MuseumDetailComponent },
+  { path: '', component: MuseumListComponent },
+  { path: 'not-found', component: NotFoundComponent },
+  { path: '**', redirectTo: 'not-found' }
 ]
 
 @NgModule({
