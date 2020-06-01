@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SingleMuseumComponent } from './single-museum.component';
+import { SingleMuseumComponent } from './museum-list-item.component';
 
 describe('SingleMuseumComponent', () => {
   let component: SingleMuseumComponent;
@@ -8,9 +8,9 @@ describe('SingleMuseumComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SingleMuseumComponent ]
+      declarations: [SingleMuseumComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

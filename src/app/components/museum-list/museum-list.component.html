@@ -1,0 +1,12 @@
+<section class="container">
+  <div class="row my-5 mx-1">
+    <h1>🏛️ Open Museum</h1>
+  </div>
+
+  <div class="row">
+
+    <app-museum-list-item-museum class="col-4 mb-5" *ngFor="let museum of museums" [museum]="museum">
+    </app-museum-list-item-museum>
+
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<div class="row">
+
+  <h1 class="col my-4 ml-3">🏛️ {{museum.name}}</h1>
+
+</div>
+
+<div class="row">
+
+  <div class="col-7">
+    <div class="my-4">
+      <app-museum-map [coordinates]="museum.coordinates">
+      </app-museum-map>
+    </div>
+  </div>
+
+  <div class="col-5">
+
+    <app-museum-info [museum]="museum">
+    </app-museum-info>
+
+    <div class="row ml-1">
+      <div class="col-2 pr-0">👈</div>
+      <div class="col-10 pl-0">
+        <p><a routerLink=""> Back to museum list</a></p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>

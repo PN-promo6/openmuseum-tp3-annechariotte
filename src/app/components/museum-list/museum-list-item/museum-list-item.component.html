@@ -1,0 +1,18 @@
+<article class="card rounded-0 border-0 shadow-sm" style="height: 200px;">
+  <div class="card-body">
+    <p class="card-title h5">{{museum.name}}</p>
+    <div class="row mb-3">
+      <div class="col-2 pr-0">📍</div>
+      <div class="col-10 pl-0">
+        <p class="card-text">{{museum.cp}} {{museum.city}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2 pr-0">➕</div>
+      <div class="col-10 pl-0">
+        <p><a [routerLink]="['museum/', museum._id]">View details</a></p>
+      </div>
+    </div>
+
+  </div>
+</article>

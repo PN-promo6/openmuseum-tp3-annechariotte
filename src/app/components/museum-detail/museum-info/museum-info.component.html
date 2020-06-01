@@ -1,0 +1,96 @@
+<article class="card rounded-0 border-0 shadow-sm mb-4">
+  <div class="card-body">
+    <div class="row mb-3" *ngIf="museum.address && museum.cp && museum.city">
+      <div class="col-2 pr-0">📍</div>
+      <div class="col-10 pl-0">
+        <p class="card-text">{{museum.address}}<br>
+          {{museum.cp}} {{museum.city}}</p>
+      </div>
+    </div>
+    <div class="row" *ngIf="museum.telephone">
+      <div class="col-2 pr-0">📞</div>
+      <div class="col-10 pl-0">
+        <p><a href="{{museum.telephone}}">{{museum.telephone}}</a></p>
+      </div>
+    </div>
+    <div class="row" *ngIf="museum.fax">
+      <div class="col-2 pr-0">📠</div>
+      <div class="col-10 pl-0">
+        <p><a href="#">{{museum.fax}}</a></p>
+      </div>
+    </div>
+    <div class="row" *ngIf="museum.website">
+      <div class="col-2 pr-0">💻</div>
+      <div class="col-10 pl-0">
+        <p><a href="{{museum.website}}" target="blank"> {{museum.website}}</a></p>
+      </div>
+    </div>
+    <div class="row" *ngIf="museum.opening">
+      <div class="col-2 pr-0">🕙</div>
+      <div class="col-10 pl-0">
+        <p> {{museum.opening}}</p>
+      </div>
+    </div>
+
+  </div>
+</article>
+<!-- <div class="row">
+
+  <p class="pb-3"><a routerLink="">👈 Back to museum list</a></p>
+
+</div>
+<div class="row">
+
+  <h1>🏛️ {{museum.name}}</h1>
+
+</div>
+
+
+<div class="row">
+
+  <article class="col card rounded-0 border-0 shadow-sm my-4">
+    <div class="card-body">
+      <div class="row mb-3" *ngIf="museum.address && museum.cp && museum.city">
+        <div class="col-1 pr-0">📍</div>
+        <div class="col-11 pl-0">
+          <p class="card-text">{{museum.address}}<br>
+            {{museum.cp}} {{museum.city}}</p>
+        </div>
+      </div>
+      <div class="row" *ngIf="museum.telephone">
+        <div class="col-1 pr-0">📞</div>
+        <div class="col-11 pl-0">
+          <p><a href="{{museum.telephone}}">{{museum.telephone}}</a></p>
+        </div>
+      </div>
+      <div class="row" *ngIf="museum.fax">
+        <div class="col-1 pr-0">📠</div>
+        <div class="col-11 pl-0">
+          <p><a href="{{museum.fax}}"> {{museum.fax}}</a></p>
+        </div>
+      </div>
+      <div class="row" *ngIf="museum.website">
+        <div class="col-1 pr-0">💻</div>
+        <div class="col-11 pl-0">
+          <p><a href="{{museum.website}}" target="blank"> {{museum.website}}</a></p>
+        </div>
+      </div>
+      <div class="row" *ngIf="museum.opening">
+        <div class="col-1 pr-0">🕙</div>
+        <div class="col-11 pl-0">
+          <p> {{museum.opening}}</p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</div>
+<div class="row">
+
+  <div class="col">
+    <div class="my-4">
+      <app-map [coordinates]="museum.coordinates">
+      </app-map>
+    </div>
+  </div>
+</div>  -->
